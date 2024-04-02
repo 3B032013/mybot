@@ -16,7 +16,7 @@ app = Flask(__name__)
 
 # LINE Bot Basic Profile
 line_bot_api = LineBotApi(bot_info.line_bot_token)
-handler = WebHookHandler(bot_info.line_bot_secret)
+handler = WebhookHandler(bot_info.line_bot_secret)
 
 # Post Request from LINE Platform
 @app.route('/callback', methods=['POST'])
